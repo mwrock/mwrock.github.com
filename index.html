@@ -19,7 +19,7 @@
       margin: 0 auto;
       width: 960px;
     }
-    h1 { font-family: "Arial black",Verdana,sans-serif; font-size: 18pt; color: #606060; line-height: 1.1em; font-weight: bold;}
+    h1 { font-family: Arial,Verdana,sans-serif; font-size: 16pt; color: #606060; line-height: 1.1em;}
     h2 { font-size: 14pt; color: #6D9BC7; font-family: Arial,Verdana,sans-serif;}
     p {line-height: 1.4em;}
 a {
@@ -53,6 +53,42 @@ margin-left: 15px;
 text-align: center;
 padding: 10px;
 }
+
+#download-button {
+border: 1px solid #D4D4D4;
+color: #666;
+width:130px;
+height: 25px;
+display: block;
+font-size: 15px;
+margin-bottom: 10px;
+padding: 10px 15px 5px 16px;
+text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.7);
+border-radius: 5px;
+background: #ECECEC;
+}
+.icon {
+float:left;
+background: url('download.png') no-repeat 0px 0;
+width: 16px;
+height:11px;
+}
+.downloadLabel {
+padding:0px 25px;
+color: #666;
+}
+.downloadLabel p {
+padding: 0px 5px;
+line-height: 15px;
+font-weight:bold;
+margin:0px;
+}
+#download-button .downloadLabel p.smallprint {
+font-size: 12px;
+}
+a:hover .downloadLabel{
+text-decoration: underline;
+}
   </style>
 <script type="text/javascript">
 
@@ -75,18 +111,29 @@ padding: 10px;
   <div id="container">
 <div class="submenu">
 <ul>
-	<li><a href="http://github.com/downloads/mwrock/RequestReduce/RequestReduce0.9.149.zip">Download</a></li> 
+        <li>
+		<div id="download-button">
+		<a href="http://github.com/downloads/mwrock/RequestReduce/RequestReduce0.9.149.zip">
+		<div class="icon">&nbsp;</div>
+		<div class="downloadLabel">
+            	<p>Download</p> 
+            	<p class="smallprint">v0.9.149</p>
+		</div> 
+        	</a>
+		</div>	
+	</li> 
 	<li><a href="http://github.com/mwrock/RequestReduce/wiki">Wiki</a></li>
 	<li><a href="http://github.com/mwrock/RequestReduce/issues">Bugs and Requests</a></li>
  
 	<li><a href="http://www.apache.org/licenses/LICENSE-2.0">License</a></li> 
 </ul>
 </div>
-    <h1>RequestReduce</h1>
+    <img width="374" height="62" src="RequestReduce_logo.png" alt="RequestReduce"/>
+    
 
-    <div class="description">
+    <h1>
       RequestReduce is a .Net Library and HttpModule providing automatic CSS background image spriting, merging and minification.
-    </div>
+    </h1>
 
     <p>RequestReduce allows any IIS based website to automaticaly sprite background images into a single PNG as well as combine and minify all CSS in the page's <head/> tag with absolutely no coding beyond a few config tweaks. RequestReduce registers itself as a response filter that will fiter any response of content type text/html. The filter looks for all css links in the &lthead/&gt; tag and replaces them with a single generated url that contains the combined and minified CSS using sprites where it can.</p>
 
