@@ -49,6 +49,9 @@ padding: 0px;
 list-style: none;
 margin-left: 15px;
 }
+.submenu li {
+padding: 2px;
+}
 #footer {
 text-align: center;
 padding: 10px;
@@ -89,6 +92,7 @@ font-size: 12px;
 a:hover .downloadLabel{
 text-decoration: underline;
 }
+
   </style>
 <script type="text/javascript">
 
@@ -124,8 +128,10 @@ text-decoration: underline;
 	</li> 
 	<li><a href="http://github.com/mwrock/RequestReduce/wiki">Wiki</a></li>
 	<li><a href="http://github.com/mwrock/RequestReduce/issues">Bugs and Requests</a></li>
- 
 	<li><a href="http://www.apache.org/licenses/LICENSE-2.0">License</a></li> 
+ <li><a href="http://twitter.com/mwrockx" class="twitter-follow-button" data-show-count="false">Follow @mwrockx</a>
+<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script><br/></li>
+
 </ul>
 </div>
     <img width="374" height="62" src="RequestReduce_logo.png" alt="RequestReduce"/>
@@ -165,6 +171,18 @@ text-decoration: underline;
 <ul>
   <li>Thus far, RequestReduce has only been tested using the .Net framework version 4 on IIS 7</li>
   <li>The identity that your asp.net worker process runs under must have write access to your web root directory for creating sprite and css files</li>
+</ul>
+
+<h2>What's Next?</h2> 
+ 
+<p>There are a ton of features I intend to add in order to make web performance optimizations just happen as part of installing Request Reduce. Here is what's at the top of the backlog:</p> 
+ 
+<ul> 
+<li>Merge and minify javascript with ability to defer loading</li> 
+<li>Leverege CSS 3 to allow RequestReduce to sprite more images without any need for css modifications for supporting browsers</li> 
+<li>Options to sprite foreground images</li> 
+<li>Image optimization</li> 
+<li>Provide a command line utility for incorporating RequestReduce optimizations into a build task</li> 
 </ul>
 <div id="footer">Copyright &copy; 2011 by <a href="http://www.mattwrock.com">Matt Wrock</a></div>
 </body>
