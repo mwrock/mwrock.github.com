@@ -2,8 +2,9 @@
 <html>
 <head>
   <meta charset='utf-8'/>
+  <meta name="description" content="RequestReduce allows any IIS based website to automaticaly sprite background images into a single PNG as well as combine and minify all CSS in the page's &lthead/&gt; tag with absolutely no coding beyond a few config tweaks. RequestReduce registers itself as a response filter that will fiter any response of content type text/html. The filter looks for all css links in the &lthead/&gt; tag and replaces them with a single generated url that contains the combined and minified CSS using sprites where it can." />
 
-  <title>RequestReduce</title>
+  <title>RequestReduce - Automatic CSS background image spriting, merging and minification</title>
 
   <style type="text/css">
     body {
@@ -141,7 +142,7 @@ text-decoration: underline;
       RequestReduce is a .Net Library and HttpModule providing automatic CSS background image spriting, merging and minification.
     </h1>
 
-    <p>RequestReduce allows any IIS based website to automaticaly sprite background images into a single PNG as well as combine and minify all CSS in the page's <head/> tag with absolutely no coding beyond a few config tweaks. RequestReduce registers itself as a response filter that will fiter any response of content type text/html. The filter looks for all css links in the &lthead/&gt; tag and replaces them with a single generated url that contains the combined and minified CSS using sprites where it can.</p>
+    <p>RequestReduce allows any IIS based website to automaticaly sprite background images into a single PNG as well as combine and minify all CSS in the page's &lthead/&gt; tag with absolutely no coding beyond a few config tweaks. RequestReduce registers itself as a response filter that will fiter any response of content type text/html. The filter looks for all css links in the &lthead/&gt; tag and replaces them with a single generated url that contains the combined and minified CSS using sprites where it can.</p>
 
 <p>RequestReduce performs these optimizations without sacrificing the performance of your web site. While the process of finding and generating the sprite image and minifying the CSS is naturally an expensive operation, requests will not block on this operation since RequestReduce performs these operations in a background thread and only once until the CSS changes or it is explicitly asked to flush its reductions.</p>
 
