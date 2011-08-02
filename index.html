@@ -4,7 +4,7 @@
   <meta charset='utf-8'/>
   <meta name="description" content="RequestReduce allows any IIS based website to automaticaly sprite background images into a single optimized PNG as well as combine and minify all CSS in the page's &lthead/&gt; tag with absolutely no coding beyond a few config tweaks. RequestReduce registers itself as a response filter that will fiter any response of content type text/html. The filter looks for all css links in the &lthead/&gt; tag and replaces them with a single generated url that contains the combined and minified CSS using optimized sprites where it can." />
 
-  <title>RequestReduce - Automatic CSS background image spriting and optimization as well as CSS merging and minification</title>
+  <title>RequestReduce - Automatic CSS background image optimization and spriting as well as CSS merging and minification</title>
 
   <style type="text/css">
     body {
@@ -139,7 +139,7 @@ text-decoration: underline;
     
 
     <h1>
-      RequestReduce is a .Net Library and HttpModule providing automatic CSS background image spriting, merging and minification.
+      RequestReduce is a .Net Library and HttpModule providing automatic CSS background image optimization and spriting as well as merging and minification.
     </h1>
 
 <p>RequestReduce allows any IIS based website to automaticaly sprite background images into a single optimized PNG as well as combine and minify all CSS in the page's &lt;head/&gt; tag with absolutely no coding beyond a few config tweaks. RequestReduce registers itself as a response filter that will fiter any response of content type text/html. The filter looks for all css links in the &lt;head/&gt; tag and replaces them with a single generated url that contains the combined and minified CSS using optimized sprites <a href="http://github.com/mwrock/RequestReduce/wiki/Can-I-make-changes-to-my-CSS-classes-to-optimize-RequestReduce-spriting%3F">where it can</a>. RequestReduce uses <a href="http://www.libpng.org/pub/png/apps/pngquant.html">pngquant</a> and <a href="http://optipng.sourceforge.net/">optipng</a> to optimize the generated sprite images producing the smallest file size possible without impacting image quality.</p> 
