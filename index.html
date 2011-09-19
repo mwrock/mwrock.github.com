@@ -177,7 +177,7 @@ text-decoration: underline;
 </code>
 </pre>
 
-<p><b>All background images you want to sprite must have an explicit width in their css class</b>. Otherwise RequestReduce cannot guarantee that the background positions it injects will not cause adjacent sprites to bleed into a background image's view port.</p>
+<p><b>All background images you want to sprite must have an explicit width in their css class</b>. Otherwise RequestReduce cannot guarantee that the background positions it injects will not cause adjacent sprites to bleed into a background image's view port. Also, RequestReduce will ignore repeating images so make sure to mark the image <b>no-repeat</b> if it is not a repeating image.</p>
 <h2>Dependencies</h2>
 <ul>
   <li>Thus far, RequestReduce has only been tested using the .Net framework version 4 on IIS 7</li>
