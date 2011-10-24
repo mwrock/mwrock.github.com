@@ -138,11 +138,11 @@ text-decoration: underline;
 <ul>
         <li>
 		<div id="download-button">
-		<a onClick="_gaq.push(['_trackEvent', 'Downloads', 'Downloaded', 'v1.2.9']);" href="BuildFiles/RequestReduce1.2.9.zip">
+		<a onClick="_gaq.push(['_trackEvent', 'Downloads', 'Downloaded', 'v1.2.10']);" href="BuildFiles/RequestReduce-net40-1.2.10.zip">
 		<div class="icon">&nbsp;</div>
 		<div class="downloadLabel">
             	<p>Download</p> 
-            	<p class="smallprint">v1.2.9</p>
+            	<p class="smallprint">v1.2.10</p>
 		</div> 
         	</a>
 		</div>	
@@ -172,7 +172,7 @@ text-decoration: underline;
 <p>RequestReduce provides several <a href="http://github.com/mwrock/RequestReduce/wiki/RequestReduce-Configuration-options">configuration options</a> to support <a href="http://github.com/mwrock/RequestReduce/wiki/Can-I-have-all-RequestReduce-CSS-and-sprite-resources-pulled-from-a-CDN%3F">CDN hosting</a>, <a href="http://github.com/mwrock/RequestReduce/wiki/Will-RequestReduce-sync-css-and-sprite-image-files-accross-all-of-the-web-servers-in-my-web-farm%3F">multiple server environments</a> and more.</p>
 <h2>Getting Started</h2>
 <ol>
-<li>If you have <a href="http://docs.nuget.org/docs/start-here/installing-nuget">Nuget</a>, simply enter this command in the Package Manager Console and skip steps two and three:<pre>Install-Package RequestReduce</pre> Otherwise, download the <a href="BuildFiles/RequestReduce1.2.9.zip">latest RequestReduce version</a>.</li>
+<li>If you have <a href="http://docs.nuget.org/docs/start-here/installing-nuget">Nuget</a>, simply enter this command in the Package Manager Console and skip steps two and three:<pre>Install-Package RequestReduce</pre> Otherwise, download the <a href="BuildFiles/RequestReduce-net40-1.2.10.zip">latest RequestReduce version</a>.</li>
 <li>Extract the contents of the downloaded zip and copy RequestReduce.dll as well as optipng.exe to your website's bin directory. (If for some reason you cannot put optipng.exe in your bin, RequestReduce will function as expected but will skip the lossless compression of its sprite images.</li>
 <li>Add the RequestReduceModule to your web.config or using the IIS GUI</li>
 <li><a href="http://github.com/mwrock/RequestReduce/wiki/Can-I-make-changes-to-my-CSS-classes-to-optimize-RequestReduce-spriting%3F">Optimize your CSS</a> to help RequestReduce better locate your background images</li>
@@ -192,9 +192,13 @@ text-decoration: underline;
 <p><b>All background images you want to sprite must have an explicit width in their css class</b>. Otherwise RequestReduce cannot guarantee that the background positions it injects will not cause adjacent sprites to bleed into a background image's view port. Also, RequestReduce will ignore repeating images so make sure to mark the image <b>no-repeat</b> if it is not a repeating image.</p>
 <h2>Dependencies</h2>
 <ul>
-  <li>Thus far, RequestReduce has only been tested using the .Net framework version 4 on IIS 7</li>
+  <li>Compatible with Framework versions 3.5 and 4.0</li>
+  <li>Standard Features are Medium Trust compliant</li>
   <li>The identity that your asp.net worker process runs under must have write access to your web root directory for creating sprite and css files</li>
 </ul>
+
+<h2>Troubleshooting</h2>
+<p>If RequestReduce does not appear to be doing anything, check out this <a href="https://github.com/mwrock/RequestReduce/wiki/RequestReduce-is-not-working.-I-don%27t-see-any-spriting-or-minification.-How-can-I-troubleshoot-this%3F">troubleshooting wiki</a> which provides several scenarios, options and debugging tips for figuring out why your content may not be being reduced. Also check the <a href="https://github.com/mwrock/RequestReduce/wiki">list of wiki support pages</a> which provides documentation addressing several topics to help you optimize RequestReduce and explain how RequestReduce works.<p>
 
 <h2>What's Next?</h2> 
  
